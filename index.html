@@ -6,44 +6,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style/main.css">
-<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
 
     <title>Box Challenge</title>
   </head>
   <body>
     <div class="fluid-container">
-    <header class="d-flex flex-row justify-content-center">
-      <div class="col-xs-12">
-      <h1>BOX<br />
-        CHALLENGE</h2>
-      </div>
-    </header>
-
+      <header class="d-flex flex-row justify-content-center">
+        <div class="col-12">
+          <h2>BOX<br />
+            CHALLENGE</h2>
+        </div>
+      </header>
       <div id="instructions" class="d-flex flex-row justify-content-center">
-        <div id="messages" class="col-xs-4">
+        <div id="messages" class="col-12">
           <p>TEST YOUR LUCK. CHOOSE A BOX. WIN A PRIZE.</p>
         </div>
       </div>
-      <main class="d-flex flex-row justify-content-center">
-        <div class="col-xs-4 button">
+      <div id="button-row" class="d-flex flex-row flex-wrap">
+        <div class="col-12 col-md-4 button">
           <p class="number">1</p>
         </div>
-        <div class="col-xs-4 button">
+        <div class="col-12 col-md-4 button">
           <p class="number">2</p>
         </div>
-        <div class="col-xs-4 button">
+        <div class="col-12 col-md-4 button">
           <p class="number">3</p>
         </div>
-      </main>
+      </div>
 
       <div id="start-over-button" class="hidden d-flex flex-row justify-content-center">
-        <div class="col-xs-12">
+        <div class="col-12">
           <button type="submit" value="Start Over" onclick="window.open('#', '_self')">Start Over</button>
         </div>
 
-    </div>
+      </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="scripts/main.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="scripts/main.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>

@@ -1,6 +1,7 @@
 
 var buttonList = document.getElementsByClassName('button');
 
+/* assign event handlers to the buttons */
 for (var i = 0; i < buttonList.length; i++) {
   buttonList[i].addEventListener('mouseover', changeBackgroundColor)
   buttonList[i].addEventListener('mousedown', showStartOverButton)
@@ -18,7 +19,7 @@ function changeBackgroundColor() {
   }
 }
 
-
+/* print no cigar message on click */
 function printNoCigar() {
   var newP = document.createElement('p');
   newP.innerHTML = 'Oooh - so close, but no cigar';
@@ -30,6 +31,7 @@ function printNoCigar() {
 }
 
 
+/* print winning message on click */
 function printWinner() {
   var newP = document.createElement('p');
   newP.innerHTML = 'DING DING DING - We have a winner';
@@ -41,6 +43,7 @@ function printWinner() {
 }
 
 
+/* print oops message on click */
 function printOops() {
   var newP = document.createElement('p');
   newP.innerHTML = 'Oops, butter luck next time';
@@ -51,6 +54,7 @@ function printOops() {
   showStartOverButton();
 }
 
+/* reveal the Start Over button */
 function showStartOverButton() {
   var startOverButton = document.getElementById('start-over-button');
   startOverButton.classList.remove('hidden');
