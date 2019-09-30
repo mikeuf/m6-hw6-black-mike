@@ -42,7 +42,13 @@ p {
   border: solid 0.75rem #6003c3;
   border-radius: 0.5rem;
   box-shadow:20px 20px 10px #cccccc;  
+}
 
+#start-over-button {
+padding: 2rem;
+font-size: 3rem;
+}
 
-
+.hidden {
+  visibility: hidden;
 }
