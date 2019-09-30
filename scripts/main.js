@@ -7,6 +7,7 @@ for (var i = 0; i < buttonList.length; i++) {
 
 buttonList[0].addEventListener('mousedown', printNoCigar)
 buttonList[1].addEventListener('mousedown', printWinner)
+buttonList[2].addEventListener('mousedown', printOops)
 
 /* Change background color of all buttons on mouseover event */
 function changeBackgroundColor() {
@@ -31,8 +32,19 @@ function printWinner() {
 
   var insertionPoint = document.getElementById('messages');
   insertionPoint.appendChild(newP);
-
 }
+
+
+function printOops() {
+  var newP = document.createElement('p');
+  newP.innerHTML = 'Oops, butter luck next time';
+
+  var insertionPoint = document.getElementById('messages');
+  insertionPoint.appendChild(newP);
+}
+
+
+
 
 
 
